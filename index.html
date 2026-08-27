@@ -3,15 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FleetMate — rental management for small operators</title>
-<meta name="description" content="FleetMate is booking, invoicing and fleet software for car rental companies. Bookings, invoices, documents and expenses on any phone. No installation.">
+<title>VeFlow — rental management for small operators</title>
+<meta name="description" content="VeFlow is booking, invoicing and fleet software for car rental companies. Bookings, invoices, documents and expenses on any phone. No installation.">
 
-<meta property="og:title" content="FleetMate — rental management for small operators">
+<meta property="og:title" content="VeFlow — rental management for small operators">
 <meta property="og:description" content="Bookings, invoices, documents and expenses for car rental companies.">
 <meta property="og:type" content="website">
-<!-- TODO: set these once the domain is live -->
-<meta property="og:url" content="https://example.com/">
-<meta property="og:image" content="https://example.com/og.png">
+<!-- Update og:url when a custom domain replaces the vercel.app address.
+     og:image is intentionally absent until a real preview image exists —
+     a missing image is better than a broken one. -->
+<meta property="og:url" content="https://veflowapp.com/">
+<meta property="og:site_name" content="VeFlow">
 
 <!-- ============================================================
      PRE-LAUNCH: keeps this page out of Google while the name is
@@ -23,7 +25,7 @@
 <meta name="theme-color" content="#14201E">
 
 <!-- Favicon: an "F" on the dark header colour, drawn inline so there's no extra file to upload -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314201E'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' font-weight='600' fill='%232E8B7F' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314201E'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' font-weight='600' fill='%232E8B7F' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -235,7 +237,7 @@ p{margin:0}
 .inst b{color:var(--ink);font-weight:500}
 
 /* ---------- pricing ---------- */
-.toggles{display:flex;gap:6px;background:#EDE6D4;border-radius:2px;padding:4px}
+.toggles{display:flex;flex-wrap:wrap;gap:6px;background:#EDE6D4;border-radius:2px;padding:4px}
 .toggles button{
   font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
   border:0;background:transparent;color:var(--ink-soft);
@@ -267,6 +269,7 @@ p{margin:0}
 }
 .calc-steps button:hover{border-color:var(--lagoon);color:var(--lagoon)}
 .calc-term{margin-top:26px;padding-top:24px;border-top:1px solid #EFE9D9}
+.calc-save{font-family:var(--mono);font-size:12px;color:var(--lagoon-lit);margin-top:9px;line-height:1.5;min-height:18px}
 
 .calc-amt{font-family:var(--display);font-size:clamp(38px,5vw,52px);font-weight:600;letter-spacing:-.025em;line-height:1;margin-top:14px;font-variant-numeric:tabular-nums}
 .calc-per{font-family:var(--mono);font-size:12px;color:rgba(255,253,247,.62);margin-top:12px;line-height:1.6}
@@ -319,7 +322,7 @@ p{margin:0}
 
 <header class="masthead">
   <div class="wrap">
-    <a class="brand" href="#top">Fleet<span>Mate</span></a>
+    <a class="brand" href="#top"><span>Ve</span>Flow</a>
     <nav>
       <a class="navlink" href="#what">What it does</a>
       <a class="navlink" href="#tutorials">Tutorials</a>
@@ -336,12 +339,12 @@ p{margin:0}
 <section class="hero">
   <div class="wrap">
     <h1>Every car, every day, on one screen.</h1>
-    <p class="lede">FleetMate runs the whole rental — the calendar, the contract, the invoice, the deposit — from the phone already in your pocket. No installation.</p>
+    <p class="lede">VeFlow runs the whole rental — the calendar, the contract, the invoice, the deposit — from the phone already in your pocket. No installation.</p>
     <div class="hero-actions">
       <a class="btn btn-solid" href="#signup">Start 5 days free</a>
       <a class="btn btn-line" href="#tutorials">Watch it work</a>
     </div>
-    <p class="hero-note">Rs 165 per car per month · 5 days free · no card needed to start</p>
+    <p class="hero-note">From Rs 165 per car per month · 5 days free · no card needed to start</p>
 
     <!-- signature element: the planner -->
     <div class="planner-frame">
@@ -538,7 +541,7 @@ p{margin:0}
     <div class="section-head">
       <p class="eyebrow">Getting it on your phone</p>
       <h2>Nothing to download from a store.</h2>
-      <p class="lede">FleetMate runs in the browser and saves itself to your home screen, so it opens like any other app — with your icon, full screen, no address bar. Once we've set up your account we'll send you the link.</p>
+      <p class="lede">VeFlow runs in the browser and saves itself to your home screen, so it opens like any other app — with your icon, full screen, no address bar. Once we've set up your account we'll send you the link.</p>
     </div>
     <div class="install">
       <div class="inst">
@@ -577,8 +580,8 @@ p{margin:0}
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Pricing</p>
-      <h2>Rs 165 per car, per month.</h2>
-      <p class="lede" style="margin-top:16px">That is the entire price list. Add as many staff logins as you need — you pay for cars, never for people. Billed once every six months, or once a year.</p>
+      <h2>From Rs 165 per car, per month.</h2>
+      <p class="lede" style="margin-top:16px">That is the entire price list — no tiers, no feature levels. Add as many staff logins as you need; you pay for cars, never for people. The longer the cycle, the lower the rate.</p>
     </div>
 
     <div class="calc">
@@ -603,16 +606,18 @@ p{margin:0}
         <div class="calc-term">
           <span class="calc-label">How often you pay</span>
           <div class="toggles" role="group" aria-label="Billing period">
+            <button type="button" data-term="1" aria-pressed="false">Monthly</button>
             <button type="button" data-term="6" aria-pressed="true">Every 6 months</button>
-            <button type="button" data-term="12" aria-pressed="false">Once a year</button>
+            <button type="button" data-term="12" aria-pressed="false">Annually</button>
           </div>
         </div>
       </div>
 
       <div class="calc-out">
         <p class="eyebrow on-dark" style="margin-bottom:0">You would pay</p>
-        <div class="calc-amt" id="calcTotal">Rs 9,900</div>
-        <p class="calc-per" id="calcPer">every 6 months · Rs 165 per car per month</p>
+        <div class="calc-amt" id="calcTotal">Rs 10,500</div>
+        <p class="calc-per" id="calcPer">every 6 months · 10 cars × Rs 175 a month × 6 months</p>
+        <p class="calc-save" id="calcSave"></p>
         <ul class="calc-inc">
           <li>Unlimited staff logins</li>
           <li>Every feature — nothing held back for a higher plan</li>
@@ -625,6 +630,7 @@ p{margin:0}
 
     <div class="price-notes">
       <span>Every account starts with <b>5 days free</b>. Payment is due before day six — we'll remind you.</span>
+      <span>Rs 185 per car billed monthly · Rs 175 every six months · Rs 165 annually.</span>
       <span>Cars added or sold during a term are settled at your next renewal. No setup fee.</span>
       <span>More than 60 cars? <a href="#signup" style="color:var(--lagoon)">Get in touch</a> and we'll quote you.</span>
     </div>
@@ -693,7 +699,7 @@ p{margin:0}
 
         <label class="consent">
           <input type="checkbox" name="consent" required>
-          <span>I agree that FleetMate may store these details and contact me about setting up an account.</span>
+          <span>I agree that VeFlow may store these details and contact me about setting up an account.</span>
         </label>
 
         <button class="btn btn-solid" type="submit">Start my 5 days free</button>
@@ -708,7 +714,7 @@ p{margin:0}
 <footer class="foot">
   <div class="wrap">
     <div>
-      <div class="brand" style="color:#FFFDF7">Fleet<span style="color:var(--lagoon-lit)">Mate</span></div>
+      <div class="brand" style="color:#FFFDF7"><span style="color:var(--lagoon-lit)">Ve</span>Flow</div>
       <p class="foot-fine">Rental management for small operators.</p>
     </div>
     <div>
@@ -721,7 +727,7 @@ p{margin:0}
         <!-- TODO: replace with your address -->
         <a href="mailto:YOUR-EMAIL@EXAMPLE.COM">Contact</a>
       </div>
-      <p class="foot-fine">&copy; 2026 FleetMate. All rights reserved.</p>
+      <p class="foot-fine">&copy; 2026 VeFlow. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -742,14 +748,16 @@ p{margin:0}
 })();
 
 /* ---------- price calculator ----------
-   One number sets the whole price list. The rate is the same on both
-   terms — paying yearly buys convenience, not a discount.             */
-var RATE_PER_CAR = 165;   // rupees, per car, per month
+   Rupees per car per month, by billing cycle. Longer cycle, lower rate.
+   Change these three numbers and the whole section follows.            */
+var RATES = { 1: 185, 6: 175, 12: 165 };
+var BASE_RATE = RATES[1];   // monthly rate, used to work out the saving
 
 (function(){
   var slider = document.getElementById('carCount');
   var out    = document.getElementById('carOut');
   var total  = document.getElementById('calcTotal');
+  var save   = document.getElementById('calcSave');
   var per    = document.getElementById('calcPer');
   if(!slider) return;
 
@@ -760,15 +768,31 @@ var RATE_PER_CAR = 165;   // rupees, per car, per month
     return 'Rs ' + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
 
+  var WHEN = { 1: 'each month', 6: 'every 6 months', 12: 'once a year' };
+
   function render(){
     var cars = parseInt(slider.value, 10);
-    var amount = cars * RATE_PER_CAR * term;
+    var rate = RATES[term];
+    var amount = cars * rate * term;
+
+    // what the same fleet would cost over a year on the monthly rate
+    var savedPerYear = (BASE_RATE - rate) * 12 * cars;
 
     out.textContent = cars;
     total.textContent = rupees(amount);
-    per.textContent = (term === 12 ? 'once a year' : 'every 6 months')
+
+    per.textContent = WHEN[term]
       + ' \u00b7 ' + cars + (cars === 1 ? ' car' : ' cars')
-      + ' \u00d7 Rs ' + RATE_PER_CAR + ' a month \u00d7 ' + term + ' months';
+      + ' \u00d7 Rs ' + rate + ' a month'
+      + (term === 1 ? '' : ' \u00d7 ' + term + ' months');
+
+    if(term === 1){
+      save.textContent = 'Pay every 6 months and save '
+        + rupees((BASE_RATE - RATES[6]) * 12 * cars) + ' a year.';
+    } else {
+      save.textContent = 'Saves ' + rupees(savedPerYear)
+        + ' a year against paying monthly.';
+    }
   }
 
   slider.addEventListener('input', render);
