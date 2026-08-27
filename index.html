@@ -103,13 +103,14 @@ p{margin:0}
 
 /* ---------- header ---------- */
 .masthead{background:var(--ink);color:var(--paper)}
-.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
-.brand{font-family:var(--display);font-size:20px;font-weight:600;text-decoration:none;letter-spacing:-.01em}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:78px}
+.brand{font-family:var(--display);font-size:29px;font-weight:600;text-decoration:none;letter-spacing:-.018em;line-height:1}
 .brand span{color:var(--lagoon-lit)}
 .masthead nav{display:flex;align-items:center;gap:30px}
 .masthead nav a{font-size:15px;text-decoration:none;color:rgba(255,253,247,.78)}
 .masthead nav a:hover{color:var(--paper)}
 @media(max-width:840px){.masthead nav a.navlink{display:none}}
+@media(max-width:420px){.brand{font-size:25px}.masthead .wrap{height:70px}}
 
 /* ---------- hero ---------- */
 .hero{padding:clamp(56px,8vw,104px) 0 0}
@@ -313,6 +314,7 @@ p{margin:0}
 /* ---------- footer ---------- */
 .foot{background:var(--ink);color:rgba(255,253,247,.62);padding:52px 0;font-size:14px}
 .foot .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start}
+.foot .brand{font-size:31px;margin-bottom:2px}
 .foot a{color:rgba(255,253,247,.78)}
 .foot-links{display:flex;flex-wrap:wrap;gap:22px}
 .foot-fine{font-family:var(--mono);font-size:11.5px;margin-top:10px;color:rgba(255,253,247,.42)}
@@ -482,6 +484,20 @@ p{margin:0}
            <div class="vid-frame"><iframe src="https://www.youtube.com/embed/VIDEO_ID"
              title="..." allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
              allowfullscreen loading="lazy"></iframe></div>                                     -->
+
+      <article class="vid">
+        <div class="vid-frame"><iframe
+          src="https://www.youtube-nocookie.com/embed/9MLWiqMpBI8"
+          title="Make your first booking"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen loading="lazy"></iframe></div>
+        <div class="vid-body">
+          <h3>Import your fleet and customers</h3>
+          <p>Bring your cars and your customer list straight in from the spreadsheet you already keep.</p>
+          <p class="vid-len">30 sec</p>
+        </div>
+      </article>
 
       <article class="vid">
         <div class="vid-frame"><div class="vid-empty">
@@ -725,7 +741,7 @@ p{margin:0}
         <a href="#pricing">Pricing</a>
         <a href="#signup">Sign up</a>
         <!-- TODO: replace with your address -->
-        <a href="mailto:YOUR-EMAIL@EXAMPLE.COM">Contact</a>
+        <a href="mailto:info@veflowapp.com">info@veflowapp.com</a>
       </div>
       <p class="foot-fine">&copy; 2026 VeFlow. All rights reserved.</p>
     </div>
@@ -822,7 +838,7 @@ var BASE_RATE = RATES[1];   // monthly rate, used to work out the saving
    then paste its endpoint over the line below. Until you do, the form
    tells the visitor to email you instead of failing silently.          */
 var FORM_ENDPOINT = 'PASTE_YOUR_FORMSPREE_ENDPOINT_HERE';
-var CONTACT_EMAIL = 'YOUR-EMAIL@EXAMPLE.COM';
+var CONTACT_EMAIL = 'info@veflowapp.com';
 
 (function(){
   var form = document.getElementById('signupForm');
