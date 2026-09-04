@@ -336,7 +336,7 @@ p{margin:0}
       <a class="navlink" href="#tutorials">Tutorials</a>
       <a class="navlink" href="#install">Install</a>
       <a class="navlink" href="#pricing">Pricing</a>
-      <a class="btn btn-ghost" href="#signup">Start free</a>
+      <a class="btn btn-ghost" href="https://veflow-signup.vercel.app/">Start free</a>
     </nav>
   </div>
 </header>
@@ -349,7 +349,7 @@ p{margin:0}
     <h1>Every car, every day, on one screen.</h1>
     <p class="lede">VeFlow runs the whole rental — the calendar, the contract, the invoice, the deposit — from the phone already in your pocket. No installation.</p>
     <div class="hero-actions">
-      <a class="btn btn-solid" href="#signup">Start 5 days free</a>
+      <a class="btn btn-solid" href="https://veflow-signup.vercel.app/">Start 5 days free</a>
       <a class="btn btn-line" href="#tutorials">Watch it work</a>
     </div>
     <p class="hero-note">From Rs 165 per car per month · 5 days free · no card needed to start</p>
@@ -646,7 +646,7 @@ p{margin:0}
           <li>We import your existing car list for you</li>
           <li>Export everything to Excel whenever you want</li>
         </ul>
-        <a class="btn btn-solid" href="#signup">Start your 5-day trial</a>
+        <a class="btn btn-solid" href="https://veflow-signup.vercel.app/">Start your 5-day trial</a>
       </div>
     </div>
 
@@ -654,7 +654,7 @@ p{margin:0}
       <span>Every account starts with <b>5 days free</b>. Payment is due before day six — we'll remind you.</span>
       <span>Rs 185 per car billed monthly · Rs 175 every six months · Rs 165 annually.</span>
       <span>Cars added or sold during a term are settled at your next renewal. No setup fee.</span>
-      <span>More than 60 cars? <a href="#signup" style="color:var(--lagoon)">Get in touch</a> and we'll quote you.</span>
+      <span>More than 60 cars? <a href="mailto:info@veflowapp.com?subject=VeFlow%20quote" style="color:var(--lagoon)">Get in touch</a> and we'll quote you.</span>
     </div>
   </div>
 </section>
@@ -666,104 +666,20 @@ p{margin:0}
       <div>
         <p class="eyebrow">Sign up</p>
         <h2>Five days free. Start with your real fleet.</h2>
-        <p class="lede" style="margin-top:16px">We set every account up by hand — that is how your data stays sealed off from every other company's. Tell us about your fleet and we will have you running within two working days.</p>
+        <p class="lede" style="margin-top:16px">Sign up takes about five minutes: enter your company and fleet, choose a plan, and accept the agreement online. We send your login within one working day, and your first invoice is payable within five days of that — those are your free days.</p>
         <ul class="aside-list">
-          <li>We create your company and your first login.</li>
+          <li>Your data is sealed off from every other company's.</li>
           <li>Send your car list in any format — we load it for you.</li>
-          <li>Your 5 free days begin the first time you sign in, not today.</li>
-          <li>No card, no commitment, nothing to cancel if you walk away.</li>
-          <li>Your data is never shared with, or visible to, another company.</li>
+          <li>One plan, every feature, priced per car.</li>
+          <li>No card needed to sign up. Pay by bank transfer or card link when your invoice arrives.</li>
         </ul>
       </div>
 
-      <form class="form" id="signupForm" novalidate>
-
-        <p class="form-sect">Your company</p>
-        <div class="field">
-          <label for="company">Company name</label>
-          <input id="company" name="company" type="text" autocomplete="organization" required>
-        </div>
-        <div class="row2">
-          <div class="field">
-            <label for="brn">Business registration number <span class="hint">(BRN)</span></label>
-            <input id="brn" name="brn" type="text">
-          </div>
-          <div class="field">
-            <label for="vat">VAT number <span class="hint">(if registered)</span></label>
-            <input id="vat" name="vat" type="text">
-          </div>
-        </div>
-
-        <p class="form-sect">Who we should talk to</p>
-        <div class="field">
-          <label for="name">Your name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
-        </div>
-        <div class="row2">
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="phone">Phone or WhatsApp</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
-          </div>
-        </div>
-        <div class="field">
-          <label for="billingEmail">Billing email <span class="hint">(if different)</span></label>
-          <input id="billingEmail" name="billingEmail" type="email">
-        </div>
-
-        <p class="form-sect">Where we send the invoice <span class="hint">— optional, you can give us this later</span></p>
-        <div class="field">
-          <label for="address">Street address</label>
-          <input id="address" name="address" type="text" autocomplete="street-address">
-        </div>
-        <div class="row2">
-          <div class="field">
-            <label for="town">Town or city</label>
-            <input id="town" name="town" type="text" autocomplete="address-level2">
-          </div>
-          <div class="field">
-            <label for="postcode">Postcode <span class="hint">(if any)</span></label>
-            <input id="postcode" name="postcode" type="text" autocomplete="postal-code">
-          </div>
-        </div>
-        <div class="field">
-          <label for="country">Country</label>
-          <input id="country" name="country" type="text" autocomplete="country-name" placeholder="Country or island">
-        </div>
-
-        <p class="form-sect">Your fleet</p>
-        <div class="field">
-          <label for="cars">How many cars</label>
-          <select id="cars" name="cars" required>
-            <option value="">Choose…</option>
-            <option>1 – 5</option>
-            <option>6 – 15</option>
-            <option>16 – 30</option>
-            <option>31 – 60</option>
-            <option>More than 60</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="notes">Anything we should know</label>
-          <textarea id="notes" name="notes" placeholder="How you keep your bookings today, what’s giving you trouble…"></textarea>
-        </div>
-
-        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="hidden" name="access_key" id="accessKey">
-        <input type="hidden" name="subject" value="New VeFlow sign-up">
-        <input type="hidden" name="from_name" value="VeFlow website">
-
-        <label class="consent">
-          <input type="checkbox" name="consent" required>
-          <span>I agree that VeFlow may store these details and contact me about setting up an account.</span>
-        </label>
-
-        <button class="btn btn-solid" type="submit">Start my 5 days free</button>
-        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
-      </form>
+      <div class="form" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px">
+        <p class="lede" style="margin:0">Ready when you are.</p>
+        <a class="btn btn-solid" href="https://veflow-signup.vercel.app/">Start 5 days free</a>
+        <p class="form-msg show" style="margin:0">Questions first? <a href="mailto:info@veflowapp.com" style="color:var(--lagoon)">info@veflowapp.com</a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -782,7 +698,7 @@ p{margin:0}
         <a href="#tutorials">Tutorials</a>
         <a href="#install">Install</a>
         <a href="#pricing">Pricing</a>
-        <a href="#signup">Sign up</a>
+        <a href="https://veflow-signup.vercel.app/">Sign up</a>
         <!-- TODO: replace with your address -->
         <a href="mailto:info@veflowapp.com">info@veflowapp.com</a>
       </div>
@@ -877,64 +793,6 @@ var BASE_RATE = RATES[1];   // monthly rate, used to work out the saving
   render();
 })();
 
-/* ---------- sign-up form ----------
-   Create a free form at https://formspree.io (or https://web3forms.com),
-   then paste its endpoint over the line below. Until you do, the form
-   tells the visitor to email you instead of failing silently.          */
-var FORM_ENDPOINT = 'https://api.web3forms.com/submit';
-var CONTACT_EMAIL = 'info@veflowapp.com';   // the address printed on the page
-// Web3Forms delivers to whichever address the key was created for. Create the
-// key for admin@veflowapp.com at web3forms.com (no account needed \u2014 they email
-// it to you), then paste it over the line below. Until then the form tells the
-// visitor to email us instead of failing silently.
-var ACCESS_KEY = '3199f6ce-1e18-4c97-8ae6-1956d7dbe267';
-
-(function(){
-  var form = document.getElementById('signupForm');
-  var msg  = document.getElementById('formMsg');
-  if(!form) return;
-
-  function say(text, ok){
-    msg.textContent = text;
-    msg.className = 'form-msg show ' + (ok ? 'ok' : 'bad');
-  }
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-
-    if(!form.checkValidity()){
-      say('Please fill in every field marked above, then send again.', false);
-      form.reportValidity();
-      return;
-    }
-
-    document.getElementById('accessKey').value = ACCESS_KEY;
-
-    var button = form.querySelector('button[type="submit"]');
-    button.disabled = true;
-    button.textContent = 'Sending…';
-    say('', true);
-    msg.className = 'form-msg';
-
-    fetch(FORM_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: new FormData(form)
-    })
-    .then(function(res){
-      if(!res.ok) throw new Error('bad response');
-      form.reset();
-      say('Thank you \u2014 we’ve got your details and will come back to you within two working days.', true);
-    })
-    .catch(function(){
-      say('That didn’t send. Please email us at ' + CONTACT_EMAIL + ' and we’ll set you up.', false);
-    })
-    .finally(function(){
-      button.disabled = false;
-      button.textContent = 'Start my 5 days free';
-    });
-  });
-})();
 </script>
 
 </body>
